@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 build 'PES1UG22CS720-1'
-                sh 'g++ ./main/hello.cpp -o hello_exec'
+                sh 'g++ ./main/hello.cpp'
                 sh 'chmod +x hello_exec'
             }
         }
